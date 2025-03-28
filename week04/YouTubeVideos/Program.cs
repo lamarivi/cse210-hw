@@ -18,6 +18,12 @@ class Program
         v2.AddComment(new Comment("Alex", "Good job you are always explaining very clearly "));
         videos.Add(v2);
 
+        Video v3 = new Video("C# Full course for free", "Bro Code");
+        v3.AddComment(new Comment("Mary", "Found this channel on accident via yt recomend, this vid finally broke my cycle of getting a random burst to want to learn C#  and then doing nothing about it, Thanks to this I finally understand how to do it. Thanks!"));
+        v3.AddComment(new Comment("Gemu", "3 years later, this video is still so relevant. Thank you for taking your time to make this video"));
+        v3.AddComment(new Comment("Andre", "You just told me all my middle school coding classes in the most simple and unique way possible thanks Bro!"));
+        videos.Add(v3);
+
         foreach (var video in videos)
         {
             Console.WriteLine($"Title: {video.GetTitle()}");
