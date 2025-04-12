@@ -14,7 +14,7 @@ public class EternalGoal : Goal
 
     public override string GetDetailsString()
     {
-        return $"{GetCheckMark()} {_name} - {_description} (Eternal)";
+        return $"{_name} - {_description} (Eternal)";
     }
 
     public override string GetGoalName()

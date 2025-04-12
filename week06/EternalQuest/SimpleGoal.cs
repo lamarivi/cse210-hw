@@ -26,7 +26,7 @@ public class SimpleGoal : Goal
 
     public override string GetDetailsString()
     {
-        return $"{GetCheckMark()} {_name} - {_description}";
+        return $"{_name} - {_description}";
     }
 
     public override string GetGoalName()
