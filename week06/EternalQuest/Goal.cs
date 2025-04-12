@@ -39,14 +39,4 @@ public abstract class Goal
     {
         _currentPoint += _points;
     }
- public void SetCheckMark()
-    {
-        string newCheckBox = _checkBox.Replace(_checkBox, "[✓]");
-        _checkBox = newCheckBox;
-    }
-
-    public string GetCheckMark()
-    {
-        return _checkBox;
-    }
 }

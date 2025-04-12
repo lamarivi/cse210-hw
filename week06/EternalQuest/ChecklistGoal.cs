@@ -22,7 +22,6 @@ public override void RecordEvent()
     {
         AddSetPointToCurrentPoint(); 
         _currentPoint += _bonus;     
-        SetCheckMark();
         _isComplete = true;
     }
     else
@@ -48,11 +47,6 @@ public override void SetIsCompleteToTrue()
 public void AddSaveAmountCompleted(int amount)
 {
     _amountCompleted = amount;
-}
-
-public override string GetDetailsString()
-{
-    return $"{GetCheckMark()} {_name} - {_description} -- Progress: {_amountCompleted}/{_target}";
 }
 
 public override string GetGoalName()
